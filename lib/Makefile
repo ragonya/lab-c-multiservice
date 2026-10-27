@@ -3,7 +3,7 @@
 ifeq ($(origin CC),default)
 CC = gcc
 endif
-CFLAGS = -Wall -Wextra -O2
+CFLAGS ?= -Wall -Wextra -O2
 
 INCLUDE_DIR = ../include
 BUILD_DIR = ../build/lib
